@@ -1,0 +1,56 @@
+<!-- DOM Document Object Model - Modelo de objetos de documento -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">        
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- .container.section -->
+    <div class="container section">
+        <!-- filas(GRID) .row.center -->
+        <div class="row center">
+            <!-- columna .col -->
+            <div class="input-field col s12">
+                <!-- Campo en el que el usuario ingresa texto input:text>label -->
+                <input type="text" name="user_name" id="user_name"><label for="user_name">Nombre</label></input>
+            </div>
+        </div>
+
+        <!-- Segunda fila -->
+        <div class="row center">
+            <!-- 2 filas cada un con camps inpu tex y su respectiv label .col.s6*2>input:text>label-->
+            <div class="input-field col s6"><input type="text" name="lastname1" id="lastname1"><label for="lastname1">Apellido paterno</label></input></div>
+            <div class="input-field col s6"><input type="text" name="lastname2" id="lastname2"><label for="lastname2">Apellido materno</label></input></div>
+        </div>
+
+        <!-- Tercer fila -->
+        <div class="row center">
+            <!-- 3 columnas .col.s4*3>inpu:number>label -->
+            <div class="input-field col s2">
+                <input type="number" name="user_age" id="user_age">
+                <label for="user_age">Edad</label></input>
+            </div>
+            <div class="input-field col s6">
+                <input type="email" name="user_email" id="user_email" class="validate">
+                <label for="user_email">Correo Personal</label></input>
+                <span class="helper-text" data-error="Valor Inválido" data-success="Validado Correctamente"></span>
+            </div>
+            <div class="input-field col s4">
+                <input type="password" name="user_pass" id="user_pass">
+                <label for="user_pass">Contraseña</label></input>
+            </div>
+        </div>
+    </div>    
+    
+</body>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</html>
